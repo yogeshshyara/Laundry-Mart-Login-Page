@@ -1,0 +1,147 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.container {
+    display: flex;
+    width: 92%;
+    max-width: 1000px;
+    height: 345px;
+}
+
+.left-section {
+    width: 50%;
+    background: #08a9f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section img {
+    width: 65%;
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.right-section {
+    width: 50%;
+    background: #f0faff;
+    padding: 35px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #293943;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #788894;
+    font-size: 9px;
+    margin: 0 0 23px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 8px;
+    color: #667986;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 32px;
+    width: 100%;
+    padding: 0 11px;
+    background: white;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    font-size: 9px;
+    margin-bottom: 14px;
+}
+
+input::placeholder {
+    color: #c5cdd2;
+}
+
+input:focus {
+    box-shadow: 0 0 0 1px #08a9f5;
+}
+
+.forgot {
+    font-size: 7px;
+    color: #344b59;
+    text-align: right;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+button {
+    height: 36px;
+    border: none;
+    border-radius: 9px;
+    background: #08a9f5;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008edb;
+}
+
+.register {
+    text-align: center;
+    color: #536675;
+    font-size: 7px;
+    margin-top: 22px;
+}
+
+.register a {
+    color: #087cf0;
+    text-decoration: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 92%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .left-section {
+        min-height: 250px;
+    }
+
+    .right-section {
+        padding: 35px 22px;
+    }
+}
